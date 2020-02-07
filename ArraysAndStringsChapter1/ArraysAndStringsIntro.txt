@@ -1,10 +1,12 @@
 Array
 Worst case
     Lookup O(1)
+    Lookup by value O(n)
     Insert O(n)
     Delete O(n)
 Best case
-    Lookup O(1)
+    Lookup by index O(1)
+    Lookup by value O(1)
     Insert O(n)
     Delete O(1)
 int[] numbers = new int[6]; 
