@@ -1,4 +1,4 @@
-class Main {
+public class StringBuilderUse {
 
     public static String joinWords(String[] words) {
         StringBuilder sentence = new StringBuilder();
