@@ -1,0 +1,32 @@
+Graph :
+Cyclic or Acyclic
+Weighthed or Unweighted 
+Directed or Undirected
+
+Shortest Paths : 
+Bellman 
+Dijkstra
+
+
+Graph Traversal && Tree Traversal: O(n)
+Breadth first dearch
+Depth first search
+Inorder
+Postorder
+Preorder
+Recursion (be mindful of Space Complexity (Stack overflow))
+
+Tree :
+Binary Tree
+Binary Search Tree
+Balanced BST lookup O(log n)
+             insert O(log n)
+             delete O(log n)
+AVL Tree
+Red Black Tree 
+Heap 
+Trie
+Binary Heap lookup O(n)
+            insert O(log n)
+            delete O(log n)
+Priority Queue

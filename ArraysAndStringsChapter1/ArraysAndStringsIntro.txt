@@ -1,4 +1,15 @@
-Array
+Array 
+String question turn it into an array split()
+static Lookup O(1)
+     push O(1)
+     Insert O(n)
+     Delete O(n)
+
+dynamic  Lookup O(1)
+     append O(1)
+     Insert O(n)
+     Delete O(n) 
+
 Worst case
     Lookup O(1)
     Lookup by value O(n)

@@ -1,0 +1,8 @@
+space O(n)
+insert O(1)
+lokkup O(1)
+delete O(1)
+could be O(n) with hash collisions and dynamic array resizing but unlikely.
+
+Improved time complexity ? fast Access O(1), tradeoff : more memory O(n)
+Collision ? Linked List

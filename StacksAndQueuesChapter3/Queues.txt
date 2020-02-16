@@ -1,0 +1,19 @@
+ADT Abstract Data type s a FIFO (first in first out) data structure
+Array Queue (BAD)
+Linked List Queue
+
+lookup O(n)
+enqueue O(1)
+dequeue O(1)
+peek O(1)
+
+        back    front 
+enqueue 1  2  3  4  5 dequeue
+
+enqueue 0
+        back    front 
+enqueue  0 1  2  3  4  5 dequeue
+
+dequeue 5 the last element
+        back    front 
+enqueue  0  1  2  3  4 dequeue

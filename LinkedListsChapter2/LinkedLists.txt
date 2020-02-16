@@ -1,0 +1,10 @@
+Linked List 
+
+Singly Linked List
+Doubly Linked List
+
+prepend O(1)
+append O(1)
+lookup O(n)
+insert O(n)
+delete O(n)

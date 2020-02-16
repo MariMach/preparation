@@ -1,0 +1,10 @@
+Bubble sort
+Selection sort 
+Insertion sort 
+
+
+Merge sort 
+Radix sort 
+Quick sort 
+Heap sort
+Counting sort 

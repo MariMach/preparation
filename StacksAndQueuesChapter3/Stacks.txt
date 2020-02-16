@@ -1,0 +1,20 @@
+ADT Abstract data type LIFO Last in first out
+
+push 1, 2 , 3 , 4, 5
+5
+4
+3
+2
+1
+
+pop 3 times
+2
+1
+
+Array Stack
+Linked List Stack
+
+lookup O(n)
+pop O(1)
+push O(1)
+peek O(1)

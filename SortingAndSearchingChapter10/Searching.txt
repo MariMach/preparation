@@ -1,0 +1,5 @@
+Searching is the array sorted ?
+
+Yes : divide and conquer - Binary Search O(log n)
+No : Will sorting it make it faster ? if still no linear Searching
+No : Is it a string ? see if a trie data structure hepls
