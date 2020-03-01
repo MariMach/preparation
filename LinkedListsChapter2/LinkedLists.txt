@@ -3,7 +3,6 @@ but unlike arrays linked lists can grow and shrink automatically, consists of a 
 each node holds two pieces of data the value ond the address of the next node.
 
 Singly Linked List
-Doubly Linked List
 
 lookup by value O(n)
 lookup by index O(n)
@@ -28,3 +27,38 @@ System.out.println(list);
 System.out.println(list.size());
 int[] arr = list.toArray();
 System.out.println(Arrays.toString(arr));
+
+
+Arrays vs LinkedLists
+Static arrays have a fixed size.
+Dynamic arrays grow by 50-100% (a waste of memory). 
+Use arrays if you know the number of items to store ==> new ArrayList(100).
+
+Linked lists dont waste memory.
+                      Arrays     Linked lists
+lookup
+        By Index      O(1)      O(n)
+        By Value      O(n)       O(n)
+insert
+        Beginning/End O(n)      O(1)
+        Middle        O(n)      O(n)
+Delete
+        Beginning     O(n)     O(1)
+        Middle        O(n)     O(n)
+        End           O(n)     O(n)
+
+
+Doubly Linked List (cons more space) each node has a value the prev node and the next node
+lookup
+        By Index      O(n)
+        By Value      O(n)
+insert
+        Beginning/End   O(1)
+        Middle          O(n)
+Delete
+        Beginning       O(1)
+        Middle          O(n)
+        End             O(1)
+
+Circular Linked List Singly or doubly: the last node will reference the first node
+usefull to build a music player 
