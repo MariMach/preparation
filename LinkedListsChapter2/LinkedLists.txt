@@ -1,10 +1,30 @@
-Linked List 
+Linked List => to store a list of objects in sequence 
+but unlike arrays linked lists can grow and shrink automatically, consists of a chain of nodes
+each node holds two pieces of data the value ond the address of the next node.
 
 Singly Linked List
 Doubly Linked List
 
-prepend O(1)
-append O(1)
-lookup O(n)
-insert O(n)
-delete O(n)
+lookup by value O(n)
+lookup by index O(n)
+
+insert at the end O(1) tail append O(1)
+insert at the beginning O(1) head prepend O(1)
+insert in the middle O(n) 
+
+delete from the beginning O(1)
+delete from the end O(n)
+delete from the middle O(n) 
+
+linked lists in java :java.util LinkedList<String>
+LinkedList list = new LinkedList();
+list.addLast(10);
+list.addLast(20);
+list.addLast(30);
+list.addFirst(5);
+System.out.println(list.contains(10));
+System.out.println(list.indexOf(10)); // returns the index of the first occurrence
+System.out.println(list);
+System.out.println(list.size());
+int[] arr = list.toArray();
+System.out.println(Arrays.toString(arr));
