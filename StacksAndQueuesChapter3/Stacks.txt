@@ -1,4 +1,8 @@
 ADT Abstract data type LIFO Last in first out
+Structure of stacks
+Runtime Complexity
+Solving real problems
+Build a Stack
 
 push 1, 2 , 3 , 4, 5
 5
@@ -13,7 +17,7 @@ pop 3 times
 
 Array Stack
 Linked List Stack
-
+ 
 lookup O(n)
 pop O(1)
 push O(1)
