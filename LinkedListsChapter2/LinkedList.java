@@ -177,6 +177,75 @@ public class LinkedList {
         return start.value;
     }
 
+    /*
+     * 1- Find the middle of a linked list in one pass. If the list has an even
+     * number of nodes, there would be two middle nodes. (Note: Assume that you
+     * don’t know the size of the list ahead of time.)
+     * 
+     */
+    public void printMiddle() {
+        // two pointers
+        // a moves one step
+        // b moves two steps
+        // b == last means the nodes are odd
+        // else means the nodes are even
+        Node a = first;
+        Node b = first;
+        while (b != last && b.next != last) {
+            b = b.next.next;
+            a = a.next;
+        }
+        if (b == last) {
+            System.out.println(a.value);
+        } else {
+            System.out.println(a.value + ", " + a.next.value);
+        }
+    }
+
+    /* Check if a linked list has a loop */
+    /*
+     * Hint: use two pointers (slow and fast) to traverse the list. Move the slow
+     * pointer one step forward and the fast pointer two steps forward. If there’s a
+     * loop, at some point, the fast pointer will meet the slow pointer and overtake
+     * it. Draw this on a paper and see it for yourself. This algorithm is called :
+     * Floyd’s Cycle-finding Algorithm.
+     */
+    public boolean hasLoop() {
+        // This algorithm is called Floyd’s Cycle-finding Algorithm
+        // move a one step
+        // move b two steps
+        // If there’s a loop, at some point,
+        // the fast pointer will meet the slow pointer and overtake it.
+        Node a = first;
+        Node b = first;
+        while (b != null && b.next != null) {
+            b = b.next.next;
+            a = a.next;
+            if (a == b) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static LinkedList createWithLoop() {
+        LinkedList list = new LinkedList();
+        list.addLast(10);
+        list.addLast(20);
+        list.addLast(30);
+
+        // Get a reference to 30
+        Node node = list.last;
+
+        list.addLast(40);
+        list.addLast(50);
+
+        // Create the loop
+        list.last.next = node;
+
+        return list;
+    }
+
     public void printMylinkedList() {
         System.out.println("Your list");
         if (isEmpty()) {

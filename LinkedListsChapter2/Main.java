@@ -23,6 +23,9 @@ public class Main {
         System.out.println("size :" + list.size());
         System.out.println(list.getKthFromTheEnd(2));
         System.out.println(list.getKthFromTheEnd(4));
-
+        list.printMiddle();
+        LinkedList listloop = new LinkedList();
+        listloop = LinkedList.createWithLoop();
+        System.out.println(listloop.hasLoop());
     }
 }
