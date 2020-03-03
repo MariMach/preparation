@@ -1,4 +1,7 @@
-ADT Abstract data type LIFO Last in first out
+ADT Abstract data type 
+=== LIFO
+=== Last in first out
+=== stack of books
 Structure of stacks
 Runtime Complexity
 Solving real problems
@@ -19,6 +22,27 @@ Array Stack
 Linked List Stack
  
 lookup O(n)
-pop O(1)
-push O(1)
-peek O(1)
+pop O(1) removes the item on the top and returns it
+push O(1) adds an item on top of the stack
+peek O(1) returns the item on the top without removing it
+isEmpty() tells us if the stack is empty or not
+
+stacks are used to :
+- Implement the undo feature (in text editors).
+- build compilers.
+- to build a calculator.
+- build navigation (eg forward/back)
+
+java.util.Stack
+Stack<Integer> stack = new Stack<>();
+stack.push(10);
+stack.push(20);
+stack.push(30);
+stack.push(40);
+// 10, 20 , 30, 40
+stack.pop() ==> 40
+// 10, 20, 30
+stack.empty();
+stack.peek();
+stack.search(); // never used 
+
