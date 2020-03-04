@@ -1,8 +1,26 @@
+stores key value pairs
+key => hash function => address to store the value
+hash tables are deterministic 
+
 space O(n)
 insert O(1)
 lokkup O(1)
 delete O(1)
-could be O(n) with hash collisions and dynamic array resizing but unlikely.
+
+could be O(n) with hash collisions  and dynamic array resizing but unlikely.
 
 Improved time complexity ? fast Access O(1), tradeoff : more memory O(n)
 Collision ? Linked List
+
+HashTables used in : 
+- Spell checkers
+- Dictionaries
+- Compilers
+- Code editors
+
+HashTables in java :
+Map interface
+HashMap
+HashTable
+TreeMap
+ 
