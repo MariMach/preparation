@@ -20,6 +20,15 @@ public class ReverseQueue {
         }
     }
 
+    /*
+     * Given an integer K and a queue of integers, write code to reverse the order
+     * of the first K elements of the queue. Input: Q = [10, 20, 30, 40, 50], K = 3
+     * Output: Q = [30, 20, 10, 40, 50]
+     */
+    public static void reverseFirstKElements(Queue<Integer> queue, int k) {
+
+    }
+
     public static void main(String[] args) {
         Queue<Integer> queue = new ArrayDeque<>();
         queue.add(10);
