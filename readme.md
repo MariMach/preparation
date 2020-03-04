@@ -18,7 +18,7 @@ Interview questions preparation : Data structures and algorithms implemented.
 - Suffix Tree/Array/Trie
 - AVL Trees
 - Deque
-- KMP
+- KMP (Knuth-Morris-Pratt Algorithm)
 - Sparse Table
 - Time Complexity
 - Space Complexity

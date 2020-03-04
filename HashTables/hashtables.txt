@@ -24,3 +24,16 @@ HashMap
 HashTable
 TreeMap
  
+Map<Integer, String> map = new HashMap<>();
+map.put(1, "mariam");
+map.put(1, "machaallah");
+// mariam will be ovritten by the machaallah
+// in hashmaps we can not have duplicate keys
+// we can store null values map.put(4, null)
+// we can store null key null value also map.put(null, null)
+System.out.println(map);
+map.containsKey(3); O(1)
+map.containsValue("mariam"); O(n)
+// for(int item: map.keySet()) // keys
+// for (Map.Entry<Integer, String> entry : map.entrySet())  // pairs
+
