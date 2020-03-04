@@ -12,6 +12,14 @@ could be O(n) with hash collisions  and dynamic array resizing but unlikely.
 Improved time complexity ? fast Access O(1), tradeoff : more memory O(n)
 Collision ? Linked List
 
+Handle collisions ==> Chaining using linked lists // Open addressing
+                    ==> Open addressing Linear Probing means searching hash(key) + 1
+                    ==> Quadratic Probing
+                    ==> Double Hashing
+Linear           | Quadratic
+hash(key) + i    | hash(key) + i2
+
+
 HashTables used in : 
 - Spell checkers
 - Dictionaries
@@ -53,3 +61,7 @@ hash functions maps a key  to a hash.
 map.put(123456, "mari")
 // array of 100
 // hash functions maps keys to arrays
+public static int hash(int number) {
+    return number % 100;
+}
+str.hashCode()
