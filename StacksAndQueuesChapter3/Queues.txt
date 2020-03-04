@@ -1,7 +1,7 @@
 ADT Abstract Data type a FIFO (first in first out) data structure
 line up of people
-Array Queue (BAD)
-Linked List Queue
+
+implement a queue using an  Array, Linked List or a Stack.
 
 Queue are used in : Printers, Operating Systenms, Web servers, Live support systems.
 
@@ -27,7 +27,7 @@ enqueue  0  1  2  3  4 dequeue
 Queue<E> an interface can not be instanciate it.
 interfaces are contracts.
 Implementations of Queues in java : ArrayDeque, LinkedList, PriorityQueue ...
-Queue<Integer> queue = new ArrayDeque<>();
+Queue<Integer> queue = new ArrayDeque<>(); // bad
 queue.add(10);
 queue.add(20);
 queue.add(30);
