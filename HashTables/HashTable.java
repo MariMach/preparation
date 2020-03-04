@@ -70,4 +70,9 @@ public class HashTable {
         }
         throw new IllegalStateException();
     }
+
+    public int size() {
+        int count = 0;
+        return count;
+    }
 }
