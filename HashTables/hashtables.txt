@@ -37,3 +37,19 @@ map.containsValue("mariam"); O(n)
 // for(int item: map.keySet()) // keys
 // for (Map.Entry<Integer, String> entry : map.entrySet())  // pairs
 
+// Interface Set 
+// Implementation : HashSet, TreeSet, LinkedHashSet, AbstractSets
+Set<Integer> set = new HashSet<>();
+set.add(1);
+set.add(2);
+set.add(1);
+set.add(3);
+System.out.println(set);
+// 1, 2, 3
+set.clear();
+sets used to find the first repeated character
+
+hash functions maps a key  to a hash.
+map.put(123456, "mari")
+// array of 100
+// hash functions maps keys to arrays
