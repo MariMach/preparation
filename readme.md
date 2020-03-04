@@ -1,45 +1,28 @@
 Interview questions preparation : Data structures and algorithms implemented.
 
-    Data Structures
+1. Data Structures
 
 - Java Built in libraries : StringBuilder, BigDecimal, Regex, BigInteger GregorianCalendar,..
-
 - Arrays
-
 - Java ArrayList
-
 - LinkedList
-
 - Stacks
-
 - Queue
-
 - Set: TreeSet, HashSet, BitSet.
-
 - Map: HashMap, TreeMap, HashTable, LinkedHashMap.
-
 - Tree/ Binary Tree/ Binary Search Tree
-
 - Segment Tree
-
 - Tries
-
 - Heaps
-
 - Union Find
-
 - Suffix Tree/Array/Trie
-
 - AVL Trees
-
 - Deque
-
 - KMP
 
 - Sparse Table
 
-
-    Algorithms
+2. Algorithms
 
 - Time Complexity
 - Space Complexity
