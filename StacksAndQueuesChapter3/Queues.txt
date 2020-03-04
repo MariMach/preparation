@@ -5,6 +5,8 @@ implement a queue using an  Array, Linked List or a Stack.
 
 Queue are used in : Printers, Operating Systenms, Web servers, Live support systems.
 
+Sharing a resource amongst  many consumers
+
 lookup O(n)
 enqueue O(1)
 dequeue O(1)
