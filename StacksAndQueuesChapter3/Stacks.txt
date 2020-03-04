@@ -46,3 +46,5 @@ stack.empty();
 stack.peek();
 stack.search(); // never used 
 
+stacks can be implmented using linked lists and arrays
+
