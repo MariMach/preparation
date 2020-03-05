@@ -19,6 +19,14 @@ Handle collisions ==> Chaining using linked lists // Open addressing
 Linear           | Quadratic
 hash(key) + i    | hash(key) + i2
 
+Chaining using linked lists
+1. compute the key's hash.
+2. get the int or the long. 
+(two different keys could have the same hash code as there may be an infinite number of keys and a finite number of ints)
+3. map the hash code to an index in the array  (like hash(key) % array.length)
+4. At this index there is a linked list that stores the entry (key, value) we must use linked list because of the collisions.
+5. to retrieve the value by its key we repeat teh same process(compute the index using the hash(key) and search through the linked list) 
+
 
 HashTables used in : 
 - Spell checkers

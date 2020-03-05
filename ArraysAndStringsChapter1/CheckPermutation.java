@@ -12,7 +12,8 @@ public class CheckPermutation {
 
     // time complexity is O(n)
     // n is the length of the string
-    // space complexity is O(c) - c the length of the char set
+    // space complexity is O(c)
+    // c the length of the char set
     public static boolean isPermutation(String s, String a) {
         // assuming 256 characters
         if (s.length() != a.length())
