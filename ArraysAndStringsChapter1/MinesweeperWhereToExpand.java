@@ -4,7 +4,8 @@ public class MinesweeperWhereToExpand {
 
     public static void main(String[] args) {
         // NOTE: The following input values will be used for testing your solution.
-        int[][] field1 = { { 0, 0, 0, 0, 0 }, { 0, 1, 1, 1, 0 }, { 0, 1, -1, 1, 0 } };
+        // int[][] field1 = { { 0, 0, 0, 0, 0 }, { 0, 1, 1, 1, 0 }, { 0, 1, -1, 1, 0 }
+        // };
 
         // click(field1, 3, 5, 2, 2);
         // should return:
@@ -17,7 +18,8 @@ public class MinesweeperWhereToExpand {
         // [-2, 1, 1, 1, -2],
         // [-2, 1, -1, 1, -2]]
 
-        int[][] field2 = { { -1, 1, 0, 0 }, { 1, 1, 0, 0 }, { 0, 0, 1, 1 }, { 0, 0, 1, -1 } };
+        // int[][] fiesld2 = { { -1, 1, 0, 0 }, { 1, 1, 0, 0 }, { 0, 0, 1, 1 }, { 0, 0,
+        // 1, -1 } };
 
         // click(field2, 4, 4, 0, 1) should return:
         // [[-1, 1, 0, 0],

@@ -1,7 +1,5 @@
 Interview questions preparation : Data structures and algorithms implemented.
 
-1. Data Structures and Algorithms
-
 - Java Built in libraries : StringBuilder, BigDecimal, Regex, BigInteger GregorianCalendar,..
 - Arrays
 - Java ArrayList

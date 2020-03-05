@@ -8,13 +8,17 @@
  */
 public class RotateMatrix {
 
-    // time complexity is O(nn)
+    // time complexity is O(n*n)
     // space complexity is O(1)
-    public static void rotate(int[][] matrix) {
+    public static void rotate90Clockwise(int[][] matrix) {
         int n = matrix.length;
-        for (int i = 0; i <= n; i++) {
-            for (int j = 0; j <= n; j++) {
-
+        for (int i = 0; i < n / 2; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[n - 1 - j][i];
+                matrix[n - 1 - j][i] = matrix[n - 1 - i][n - 1 - j];
+                matrix[n - 1 - i][n - 1 - j] = matrix[j][n - 1 - i];
+                matrix[j][n - 1 - i] = temp;
             }
         }
     }
@@ -36,19 +40,13 @@ public class RotateMatrix {
 
     public static void main(String[] args) {
 
-        int[][] matrix = new int[][] { { 1, 1, 1 }, { 1, 0, 1 }, { 1, 1, 1 } };
-        int[][] matrix0 = new int[][] { { 0, 1, 2, 0 }, { 3, 4, 5, 2 }, { 1, 3, 1, 5 } };
+        int[][] matrix = new int[][] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 
         System.out.println("matrix 1");
         print2DArray(matrix);
-        rotate(matrix);
+        rotate90Clockwise(matrix);
         System.out.println("matrix 1 : solution");
         print2DArray(matrix);
 
-        System.out.println("matrix 2");
-        print2DArray(matrix0);
-        rotate(matrix0);
-        System.out.println("matrix 2 : solution");
-        print2DArray(matrix0);
     }
 }
