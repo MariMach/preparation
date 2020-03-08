@@ -1,3 +1,7 @@
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
 /* 
 
 Given an array of integers, return indices of the two numbers such
@@ -10,11 +14,22 @@ the same element twice.
 */
 public class TwoSum {
 
+    // a + b = target
+    // a = target -b
+    // O(n)
     public static int[] twoSum(int[] arr, int target) {
-        return new int[] { 1, 2 };
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < arr.length; i++) {
+            int a = target - arr[i];
+            if (map.containsKey(a)) {
+                return new int[] { map.get(a), i };
+            }
+            map.put(arr[i], i);
+        }
+        return null;
     }
 
     public static void main(String args[]) {
-
+        System.out.println(Arrays.toString(twoSum(new int[] { 2, 3, 4, 6, 7, 8, 9 }, 8)));
     }
 }
