@@ -3,7 +3,7 @@ import java.util.Map;
 
 public class FirstNonRepeatedCharacter {
 
-    public static char findFirstRepeatedChar(String str) {
+    public static char findFirstNonRepeatedChar(String str) {
         Map<Character, Integer> map = new HashMap<>();
         char[] chars = str.toCharArray();
         for (char ch : chars) {
@@ -19,7 +19,7 @@ public class FirstNonRepeatedCharacter {
     }
 
     public static void main(String args[]) {
-        char ch = findFirstRepeatedChar("aaggrreennkkp");
+        char ch = findFirstNonRepeatedChar("aaggrreennkkp");
         System.out.println(ch);
     }
 }
