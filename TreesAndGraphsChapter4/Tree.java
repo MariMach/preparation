@@ -120,4 +120,45 @@ public class Tree {
         }
         return last.value;
     }
+
+    // check if two trees are equal
+    public boolean equals(Tree tree) {
+        if (tree == null) {
+            return false;
+        }
+        return equals(root, tree.root);
+    }
+
+    private boolean equals(Node f, Node s) {
+        if (first == null && second == null) {
+            return true;
+        }
+        if (f != null && s != null) {
+            if (f.value == s.value) {
+                return equals(f.leftChild, s.leftChild) && equals(f.rightChild, s.rightChild);
+            }
+        }
+        return false;
+    }
+
+    // validating Binary Search tree
+    public boolean isBST() {
+        return isBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+    }
+
+    private boolean isBST(Node root, int min, int max) {
+        if (root == null) {
+            return true;
+        }
+        if (root.value < min || root.value > max) {
+            return flase;
+        }
+        return isBST(root.leftChild, min, root.value - 1) && isBST(root.rightChild, root.value + 1, max);
+    }
+
+    public void swapRoot() {
+        Node tmp = root.leftChild;
+        root.leftChild = root.rightChild;
+        root.rightChild = tmp;
+    }
 }
