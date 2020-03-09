@@ -8,10 +8,23 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ArraysAndStringsChapter1/LocalGlobalInversion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="33" selection-start-column="13" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-10" />
     <option name="width" value="978" />
     <option name="height" value="1041" />
@@ -23,7 +36,22 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CrackingTheCodeInerview" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CrackingTheCodeInerview" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CrackingTheCodeInerview" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CrackingTheCodeInerview" type="462c0819:PsiDirectoryNode" />
+              <item name="ArraysAndStringsChapter1" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -54,15 +82,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583694337913</updated>
-      <workItem from="1583694345803" duration="604000" />
+      <workItem from="1583694345803" duration="652000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="604000" />
+    <option name="totallyTimeSpent" value="652000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="816" height="869" extended-state="1" />
+    <frame x="-8" y="0" width="816" height="869" extended-state="0" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -96,6 +124,15 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ArraysAndStringsChapter1/LocalGlobalInversion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="33" selection-start-column="13" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
