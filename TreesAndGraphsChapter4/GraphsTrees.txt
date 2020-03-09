@@ -16,9 +16,26 @@ Postorder
 Preorder
 Recursion (be mindful of Space Complexity (Stack overflow))
 
-Tree :
-Binary Tree
-Binary Search Tree
+Tree : 
+- Used to represent hierarchical data.
+- Databases (indexing).
+- Autocompletion.
+- Compilers.
+- Compression.
+
+A data structure that stores elements in a hierarchy 
+those elements are nodea and the elements that connect them are edges.
+Each node contains a value or data object.
+The root is the parrent of the nodes.
+the nodes on the bottom are leaf nodes.
+
+Binary Tree : each node has two children.
+lookup O(log n)
+insert O(log n)
+delete O(log n)
+better than arrays and linked lists
+
+Binary Search Tree : easly look up the data, the value left < node < right.
 Balanced BST lookup O(log n)
              insert O(log n)
              delete O(log n)
