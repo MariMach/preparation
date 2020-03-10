@@ -1,12 +1,19 @@
 public class TreeMain {
     public static void main(String[] args) {
-        Tree tree = new Tree();
-        tree.insert(7);
-        tree.insert(4);
-        tree.insert(9);
-        tree.insert(1);
-        tree.insert(6);
-        tree.insert(8);
+        AVLTree tree = new AVLTree();
+        tree.insert(30);
+        tree.insert(20);
         tree.insert(10);
+        tree.preOrder();
+        AVLTree tree1 = new AVLTree();
+        tree1.insert(10);
+        tree1.insert(20);
+        tree1.insert(30);
+        tree1.preOrder();
+        AVLTree tree2 = new AVLTree();
+        tree2.insert(10);
+        tree2.insert(30);
+        tree2.insert(20);
+        tree2.preOrder();
     }
 }

@@ -5,3 +5,6 @@
  * "ERROR:'
  * 
  */
+public class BinaryToString {
+
+}

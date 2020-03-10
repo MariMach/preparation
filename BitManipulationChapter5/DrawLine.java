@@ -7,3 +7,6 @@
  * y) to ( x2, y). The method signature should look something like:
  * drawline(byte[] screen, int width, int xl, int x2, int y)
  */
+public class DrawLine {
+
+}

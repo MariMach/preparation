@@ -409,4 +409,19 @@ public class Tree {
         }
         return dp[n];
     }
+
+    // find second max in a binary tree
+    public int secondMax() {
+        if (root == null)
+            throw new IllegalStateException();
+
+        return secondMax(root);
+    }
+
+    private int secondMax(Node root) {
+        if (root.rightChild == null)
+            return root.value;
+
+        return secondMax(root.rightChild);
+    }
 }
