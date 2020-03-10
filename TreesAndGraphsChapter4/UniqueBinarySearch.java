@@ -7,7 +7,6 @@ public class UniqueBinarySearch {
         if (n == 0) {
             return new ArrayList<TreeNode>();
         }
-
         return helper(1, n);
     }
 
@@ -17,7 +16,6 @@ public class UniqueBinarySearch {
             result.add(null);
             return result;
         }
-
         for (int i = m; i <= n; i++) {
             List<TreeNode> ls = helper(m, i - 1);
             List<TreeNode> rs = helper(i + 1, n);
@@ -30,7 +28,6 @@ public class UniqueBinarySearch {
                 }
             }
         }
-
         return result;
     }
 }

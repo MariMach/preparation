@@ -4,15 +4,14 @@ import java.util.List;
 
 public class BalancedExpression {
 
-    private static final List rightBrackets = Arrays.asList('(', '<', '[', '{');
-    private static final List leftBrackets = Arrays.asList(')', '>', ']', '}');
+    private static final List leftBrackets = Arrays.asList('(', '<', '[', '{');
+    private static final List rightBrackets = Arrays.asList(')', '>', ']', '}');
 
     public static boolean isBalanced(String input) {
         if (input == null) {
             throw new IllegalArgumentException();
         }
         Stack<Character> stack = new Stack<>();
-
         for (char ch : input.toCharArray()) {
             if (isLeftBracket(ch)) {
                 stack.push(ch);
@@ -31,11 +30,11 @@ public class BalancedExpression {
     }
 
     private static boolean isLeftBracket(char ch) {
-        return rightBrackets.contains(ch);
+        return leftBrackets.contains(ch);
     }
 
     private static boolean isRightBracket(char ch) {
-        return leftBrackets.contains(ch);
+        return rightBrackets.contains(ch);
     }
 
     private static boolean bracketsMatch(char left, char right) {

@@ -151,7 +151,7 @@ public class Tree {
             return true;
         }
         if (root.value < min || root.value > max) {
-            return flase;
+            return false;
         }
         return isBST(root.leftChild, min, root.value - 1) && isBST(root.rightChild, root.value + 1, max);
     }
