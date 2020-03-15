@@ -5,9 +5,9 @@ public class Heap {
     // parent = (index - 1) / 2
     // heap
     // int[]
-    // insert(int)
-    // remove()
-    // a max heap
+    // insert(int) O(log n)
+    // remove() O(log n)
+    // a max heap O(1)
     private int[] items = new int[10];
     private int size;
 
