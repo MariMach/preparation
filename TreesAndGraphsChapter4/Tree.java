@@ -421,7 +421,7 @@ public class Tree {
     private int secondMax(Node root) {
         if (root.rightChild == null)
             return root.value;
-
+        // to complete
         return secondMax(root.rightChild);
     }
 }

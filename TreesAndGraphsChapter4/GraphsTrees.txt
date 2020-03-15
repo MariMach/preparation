@@ -67,3 +67,20 @@ Perfect tree : A binary tree where every level except the last is full of nodes
 Left skewed sorted in decreasing order ~ a linked list
 right skewed sorted in increasing order ~ a linked list
 
+
+Heaps : A complete tree ~ filled from left to right
+        Heap property ~ Max Heap : every node is less than or equat of its root.
+Max Heap = the root holds the max value  (bubble up the max value)
+Min Heap = the root holds the smallest value (bubble up the small value)
+Binary heap : A binary tree complete with a heap property.
+heaps we can only delete the root node.
+delete log(n)
+insert log(n)
+ 
+heaps used in : 
+- Sorting(HeapSort)
+- Graph algorithms(find the shortest path)
+- Priority queues
+- Finding the Kth smallest/ largest value. 
+
+height in a balanced tree h = log(n)
