@@ -3,14 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="430e08be-ad26-4b31-b669-ce7368682234" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArraysAndStringsChapter1/RotateMatrix.class" beforeDir="false" afterPath="$PROJECT_DIR$/ArraysAndStringsChapter1/RotateMatrix.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArraysAndStringsChapter1/RotateMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/ArraysAndStringsChapter1/RotateMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TreesAndGraphsChapter4/AVLTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/TreesAndGraphsChapter4/AVLTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TreesAndGraphsChapter4/AVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/TreesAndGraphsChapter4/AVLTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TreesAndGraphsChapter4/GraphsTrees.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TreesAndGraphsChapter4/GraphsTrees.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TreesAndGraphsChapter4/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/TreesAndGraphsChapter4/Tree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TreesAndGraphsChapter4/TreeMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/TreesAndGraphsChapter4/TreeMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TreesAndGraphsChapter4/TreeMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/TreesAndGraphsChapter4/TreeMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TreesAndGraphsChapter4/Heap.class" beforeDir="false" afterPath="$PROJECT_DIR$/TreesAndGraphsChapter4/Heap.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,15 +28,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-12" />
-    <option name="width" value="980" />
-    <option name="height" value="1044" />
+    <option name="x" value="-14" />
+    <option name="width" value="982" />
+    <option name="height" value="1045" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -60,8 +55,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -95,16 +88,17 @@
       <workItem from="1583694345803" duration="652000" />
       <workItem from="1583931082488" duration="11000" />
       <workItem from="1584217684175" duration="7000" />
+      <workItem from="1584287591511" duration="11000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="670000" />
+    <option name="totallyTimeSpent" value="681000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-10" y="0" width="818" height="871" extended-state="0" />
+    <frame x="-11" y="0" width="819" height="872" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26253298" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27009222" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
