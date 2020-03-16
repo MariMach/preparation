@@ -84,3 +84,13 @@ heaps used in :
 - Finding the Kth smallest/ largest value. 
 
 height in a balanced tree h = log(n)
+
+Tries : to implment Autocompletion.
+Tries ~ Retrieval ~ Digital ~ Radix ~ Prefixtrees
+super fast lookups for words with the same prefix. 
+the root is empty.
+lookup O(l) length of the word
+insert O(l)
+delete O(l)
+
+
