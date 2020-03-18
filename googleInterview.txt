@@ -1,0 +1,74 @@
+Please use this Google doc during your interview (your interviewer will see what you write here). To free your hands for typing, we recommend using a headset or speakerphone.
+
+
+Consider an array of integers and a number K > 0. Find the minimum length of any interval of elements in the array such that the sum of elements across the interval is exactly K.
+
+For example:
+
+index   0  1  2  3  4  5  6  7
+array  [6, 3, 8, 1, 2, 2, 3, 4]
+K = 5
+
+We find that the interval [5, 6] of length 2 has minimal length. Interval [3, 5] also sums to K = 5, but is larger (length 3).
+
+// brute force
+// second array tp keep track of the sums
+// 0  1   2   3  	4   5   6  7
+// arr
+// 6, 9, 17, 18, 20, 22, 25, 29
+// arr[1] - arr[0] compare it with k
+// 18
+// a sorted array 
+
+// 7 -1
+// 7 6 arr
+// 7 - 6 
+// 6 - 7
+
+// time complexity O(n*n)
+// space complexity O(n)
+// arr 1  k 1 0 200
+// arr 2 2  2 2  2 2 2  9
+// arr 
+Public int intervalLength(int[] arr, int k) {
+	if(k < 0) {
+		Throw new ILlegalArgumentException();
+}
+
+	int n = arr.length;
+	Int l = INTEGER.MAX_VALUE;
+	int[] sum = new int[n];
+      sum[0] = arr[0];
+	for(int i = 1; i < n; i++) {
+		if(arr[i] == k) {
+			Return 1;
+}
+		sum[i] = sum[i-1] + arr[i];
+	}
+	for(int i = 0; i < n; i++) {
+		if(sum[i] == k) {
+		   l = Math.min(l, i+1);
+} else {
+	for(int j = i; j < n; j++) {
+		if(sum[j]-sum[i] == k) {
+			l = Math.min(l, j-i);
+}
+}
+}
+}
+Return l;
+}
+
+Write a method that computes the minimum sum of two interval lengths such that:
+- Each interval's values sum to K.
+- The intervals do not intersect.
+
+For example:
+
+index   0  1  2  3  4  5  6  7  8  9  10 
+array  [1, 2, 2, 3, 4, 6, 3, 1, 4, 2,  8]
+K = 5
+
+We find minimal total interval length to be 4, the two intervals being [2, 3] and [7, 8].
+
+
