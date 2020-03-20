@@ -26,10 +26,7 @@ public class Anagrams {
     }
 
     public static void main(String[] args) {
-        System.out.println(areAnagram("abba"));
-        System.out.println(areAnagram("abcd"));
-        System.out.println(areAnagram("ifailuhkqq"));
-        System.out.println(areAnagram("kkkk"));
-        System.out.println(areAnagram("cdcd"));
+        System.out.println(areAnagram("abba", "aabb"));
+        System.out.println(areAnagram("abcd", "abcd"));
     }
 }
