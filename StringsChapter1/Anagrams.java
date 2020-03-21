@@ -1,5 +1,21 @@
 public class Anagrams {
 
+    // O(n log n)
+    public static boolean areAnagrams(String first, String second) {
+        if (first == null || second == null)
+            return false;
+        if (first.length() != second.length())
+            return false;
+
+        char[] array1 = first.toLowerCase().toCharArray();
+        Arrays.sort(array1);
+
+        char[] array2 = second.toLowerCase().toCharArray();
+        Arrays.sort(array2);
+
+        return Arrays.equals(array1, array2);
+    }
+
     // O(n)
     public static boolean areAnagram(String first, String second) {
         if (first == null || second == null)
