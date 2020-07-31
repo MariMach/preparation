@@ -1,0 +1,38 @@
+public class BinaryGap {
+    // you can also use imports, for example:
+    // import java.util.*;
+
+    // you can write to stdout for debugging purposes, e.g.
+    // System.out.println("this is a debug message");
+
+    public static int solution(int N) {
+        // write your code in Java SE 8
+        String bin = Integer.toBinaryString(N);
+
+        // N to binary array
+        int l = bin.length();
+        int count = 0;
+        int max = 0;
+        // count the binary gap of zeros
+        for (int i = 0; i < l; i++) {
+            System.out.println("the items :" + bin.charAt(i));
+            if (bin.charAt(i) == '1') {
+                max = Math.max(count, max);
+                count = 0;
+            } else {
+                count++;
+            }
+        }
+        // take the max
+        System.out.println("the binary :" + bin);
+        return max;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("The solution :" + solution(100));
+        System.out.println("The solution :" + solution(0));
+        System.out.println("The solution :" + solution(7));
+
+    }
+
+}
