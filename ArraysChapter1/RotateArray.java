@@ -2,10 +2,11 @@ import java.util.Arrays;
 
 public class RotateArray {
     public static void rotate(int[] nums, int k) {
-        k = k % nums.length;
-        int[] tmp = new int[k];
-        int start = nums.length - k;
         int n = nums.length;
+        k = k % n;
+        int[] tmp = new int[k];
+        int start = n - k;
+
         // store the k last numbers
         for (int i = start, j = 0; i < n && j < k; i++, j++) {
             tmp[j] = nums[i];
