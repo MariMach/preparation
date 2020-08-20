@@ -18,13 +18,12 @@ A ≤ B.
 
 public class CountDiv {
     public static int solution(int A, int B, int K) {
-        int res = 0;
-        for (int i = A; i <= B; i++) {
-            if ((i % K) == 0) {
-                res++;
-            }
-        }
-        return res;
+        /*
+         * time complexity O(B-A) int res = 0; for (int i = A; i <= B; i++) { if ((i %
+         * K) == 0) { res++; } } return res;
+         */
+        // space and time complexity O(1)
+        return B / K - A / K + (A % K == 0 ? 1 : 0);
     }
 
     public static void main(String[] args) {
