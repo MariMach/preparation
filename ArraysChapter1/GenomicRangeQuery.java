@@ -40,6 +40,8 @@ string S consists only of upper-case English letters A, C, G, T.
 */
 public class GenomicRangeQuery {
 
+    // Time Complexity O(M*N)
+    // Space Complexity O(M+N)
     public static int[] solution(String S, int[] P, int[] Q) {
         int N = S.length();
         int M = P.length;
@@ -78,9 +80,104 @@ public class GenomicRangeQuery {
         return 4;
     }
 
+    // Time Complexity O(M+N)
+    // Space Complexity O(N*N + M)
+    public static int[] solution2(String S, int[] P, int[] Q) {
+        int N = S.length();
+        int M = P.length;
+        int[] res = new int[M];
+        int[][] mins = new int[N][N];
+        mins[N - 1][N - 1] = getValue(S.charAt(N - 1));
+        for (int i = 0; i < N - 1; i++) {
+            mins[i][i] = getValue(S.charAt(i));
+            if (mins[i][i] > 1) {
+                for (int j = i + 1; j < N; j++) {
+                    mins[i][j] = Math.min(mins[i][j - 1], getValue(S.charAt(j)));
+                }
+            }
+        }
+        for (int i = 0; i < M; i++) {
+            if (mins[P[i]][P[i]] == 1) {
+                res[i] = 1;
+            } else {
+                res[i] = mins[P[i]][Q[i]];
+            }
+        }
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                System.out.print(mins[i][j] + " ");
+            }
+            System.out.println();
+        }
+        return res;
+    }
+
+    // Time Complexity O(M+N)
+    // Space Complexity O(N*N + M)
+    public static int[] solution3(String S, int[] P, int[] Q) {
+        int N = S.length();
+        int M = P.length;
+        int[] res = new int[M];
+        int[][] mins = new int[N][4];
+        for (int i = 0; i < N; i++) {
+            mins[i][getValue(S.charAt(i)) - 1] = 1;
+        }
+
+        for (int i = 0; i < M; i++) {
+            for (int j = P[i]; j <= Q[i]; j++) {
+                if (res[i] > 0) {
+                    break;
+                }
+                if (mins[j][0] == 1) {
+                    res[i] = 1;
+                    break;
+                }
+            }
+            for (int j = P[i]; j <= Q[i]; j++) {
+                if (res[i] > 0) {
+                    break;
+                }
+                if (mins[j][1] == 1) {
+                    res[i] = 2;
+                    break;
+                }
+            }
+            for (int j = P[i]; j <= Q[i]; j++) {
+                if (res[i] > 0) {
+                    break;
+                }
+                if (mins[j][2] == 1) {
+                    res[i] = 3;
+                    break;
+                }
+            }
+            for (int j = P[i]; j <= Q[i]; j++) {
+                if (res[i] > 0) {
+                    break;
+                }
+                if (mins[j][3] == 1) {
+                    res[i] = 4;
+                    break;
+                }
+            }
+
+        }
+
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < 4; j++) {
+                System.out.print(mins[i][j] + " ");
+            }
+            System.out.println();
+        }
+        return res;
+    }
+
     public static void main(String[] args) {
         // 2 1 3 2 2 4 1
         System.out.println(Arrays.toString(solution("CAGCCTA", new int[] { 2, 5, 0 }, new int[] { 4, 5, 6 })));
         // {2, 4 ,1}
+        System.out.println(Arrays.toString(solution2("CAGCCTA", new int[] { 2, 5, 0, 1 }, new int[] { 4, 5, 6, 4 })));
+
+        System.out.println(Arrays.toString(solution3("CAGCCTA", new int[] { 2, 5, 0, 1 }, new int[] { 4, 5, 6, 4 })));
     }
 }
