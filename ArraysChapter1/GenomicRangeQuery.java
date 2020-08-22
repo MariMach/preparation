@@ -172,6 +172,38 @@ public class GenomicRangeQuery {
         return res;
     }
 
+    // the O(N) time and space Complexity is the segment tree
+    // O(log N) to search the tree
+    // O(N) to construct it
+    public static int[] solutionST(String S, int[] P, int[] Q) {
+        int N = S.length();
+        int M = P.length;
+        int[] res = new int[M];
+        int[] val = new int[N];
+        for (int i = 0; i < N; i++) {
+            val[i] = getValue(S.charAt(i));
+        }
+        // construct a tree from an array
+        // left of i 2*i + 1
+        // right of i 2*i + 2
+        // root of i (i - 1)/2
+        return res;
+    }
+
+    public static void constructSegmentTree(int[] arr, int[] segTree, int low, int high, int pos) {
+        if (low == high) {
+            segTree[pos] = arr[low];
+            return;
+        }
+        int mid = (low + high) / 2;
+        // left
+        constructSegmentTree(arr, segTree, low, mid, 2 * pos + 1);
+        // right
+        constructSegmentTree(arr, segTree, mid, high, 2 * pos + 2);
+        // root
+        segTree[pos] = Math.min(segTree[2 * pos + 1], segTree[2 * pos + 2]);
+    }
+
     public static void main(String[] args) {
         // 2 1 3 2 2 4 1
         System.out.println(Arrays.toString(solution("CAGCCTA", new int[] { 2, 5, 0 }, new int[] { 4, 5, 6 })));
@@ -179,5 +211,8 @@ public class GenomicRangeQuery {
         System.out.println(Arrays.toString(solution2("CAGCCTA", new int[] { 2, 5, 0, 1 }, new int[] { 4, 5, 6, 4 })));
 
         System.out.println(Arrays.toString(solution3("CAGCCTA", new int[] { 2, 5, 0, 1 }, new int[] { 4, 5, 6, 4 })));
+
+        System.out.println(Arrays.toString(solutionST("CAGCCTA", new int[] { 2, 5, 0, 1 }, new int[] { 4, 5, 6, 4 })));
+
     }
 }
